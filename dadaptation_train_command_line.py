@@ -102,7 +102,7 @@ class ArgStore:
         self.random_crop: bool = False  # IMPORTANT: Clashes with cache_latents
         self.vae: Union[str, None] = None  # Seems to only make results worse when not using that specific vae, should probably not use
         self.no_meta: bool = False  # This removes the metadata that now gets saved into safetensors, (you should keep this on)
-        self.log_dir: Union[str, None] = /home/lanzer/training_data/log  # output of logs, not useful to most people.
+        self.log_dir: Union[str, None] = None  # output of logs, not useful to most people.
         self.bucket_reso_steps: Union[int, None] = None  # is the steps that is taken when making buckets, can be any
                                                          # can be any positive value from 1 up
         self.bucket_no_upscale: bool = False  # Disables up-scaling for images in buckets
